@@ -1,4 +1,4 @@
-Sockeye is a sequence-to-sequence framework for Neural Machine Translation based on Apache MXNet Incubating.
+[Sockeye](https://github.com/awslabs/sockeye) is a sequence-to-sequence framework for Neural Machine Translation based on [Apache MXNet Incubating](https://github.com/apache/incubator-mxnet).
 
 It implements state-of-the-art encoder-decoder architectures, such as
 - Deep Recurrent Neural Networks with Attention [[Bahdanau, '14](https://arxiv.org/abs/1409.0473)]
