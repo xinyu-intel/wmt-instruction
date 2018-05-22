@@ -1,9 +1,7 @@
 [Sockeye](https://github.com/awslabs/sockeye) is a sequence-to-sequence framework for Neural Machine Translation based on [Apache MXNet Incubating](https://github.com/apache/incubator-mxnet).
 
-It implements state-of-the-art encoder-decoder architectures, such as
-- Deep Recurrent Neural Networks with Attention [[Bahdanau, '14](https://arxiv.org/abs/1409.0473)]
+It implements state-of-the-art encoder-decoder architectures, especially attention model:
 - Transformer Models with self-attention [[Vaswani et al, '17](https://arxiv.org/abs/1706.03762)]
-- Fully convolutional sequence-to-sequence models [[Gehring et al, '17](https://arxiv.org/abs/1705.03122)]
 
 This document will give you a brief instruction to use sockeye to build GNMT model based on MXNet-MKL.
 
@@ -102,7 +100,7 @@ You can use mxboard to monitor training progress.
 
 The training progress may consume a lot of time on cpu and you can just train small epoch for inference.
 
-### Inference Profiling
+### Profiling
 
 After training you may get a wmt model in `wmt_model_transformer` and you can use this model to do inference. Before performing inference, you should enable mxnet profiling tools first.
 
