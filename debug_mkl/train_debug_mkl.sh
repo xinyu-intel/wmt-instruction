@@ -6,13 +6,13 @@ conda activate
 
 #export KMP_DUPLICATE_LIB_OK=TRUE
 
-export PYTHONPATH=../subword-nmt:../sockeye
+export PYTHONPATH=../subword-nmt:../sockeye:$PYTHONPATH
 
 
-python -m sockeye.train  -s corpus.tc.BPE.de \
-                         -t corpus.tc.BPE.en \
-                        -vs newstest2016.tc.BPE.de \
-                        -vt newstest2016.tc.BPE.en \
+python -m sockeye.train  -s ../corpus.tc.BPE.de \
+                         -t ../corpus.tc.BPE.en \
+                        -vs ../newstest2016.tc.BPE.de \
+                        -vt ../newstest2016.tc.BPE.en \
                         --encoder rnn \
                         --decoder rnn \
                         --num-embed 256 \
